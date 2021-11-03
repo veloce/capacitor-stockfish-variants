@@ -13,13 +13,13 @@
 		50ADFFA42020D75100D50D53 /* Capacitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ADFFA52020D75100D50D53 /* Capacitor.framework */; };
 		82485E924BAB2B97585F4C01 /* Pods_CapacitorStockfishVariantsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4787028A3C62E78C43C1E24 /* Pods_CapacitorStockfishVariantsTests.framework */; };
 		962E320D25924CED004FDF57 /* threadbuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 962E320C25924CED004FDF57 /* threadbuf.h */; };
-		962E34CB259359D4004FDF57 /* StockfishSendOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 962E34CA259359D4004FDF57 /* StockfishSendOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		962E34CB259359D4004FDF57 /* StockfishSendOutputMv.h in Headers */ = {isa = PBXBuildFile; fileRef = 962E34CA259359D4004FDF57 /* StockfishSendOutputMv.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		962E35B22594EE7E004FDF57 /* Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 962E35B12594EE7E004FDF57 /* Plugin.m */; };
 		962E35B62594EEA9004FDF57 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962E35B52594EEA9004FDF57 /* Plugin.swift */; };
-		962E35BC2594EECE004FDF57 /* StockfishBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 962E35BB2594EECE004FDF57 /* StockfishBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		962E35C22594EF0A004FDF57 /* StockfishBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 962E35C12594EF0A004FDF57 /* StockfishBridge.mm */; };
-		96A9B8052591EE5C00389888 /* Stockfish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96A9B8032591EE5C00389888 /* Stockfish.cpp */; };
-		96A9B8062591EE5C00389888 /* Stockfish.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 96A9B8042591EE5C00389888 /* Stockfish.hpp */; };
+		962E35BC2594EECE004FDF57 /* StockfishBridgeMv.h in Headers */ = {isa = PBXBuildFile; fileRef = 962E35BB2594EECE004FDF57 /* StockfishBridgeMv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		962E35C22594EF0A004FDF57 /* StockfishBridgeMv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 962E35C12594EF0A004FDF57 /* StockfishBridgeMv.mm */; };
+		96A9B8052591EE5C00389888 /* StockfishMv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96A9B8032591EE5C00389888 /* StockfishMv.cpp */; };
+		96A9B8062591EE5C00389888 /* StockfishMv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 96A9B8042591EE5C00389888 /* StockfishMv.hpp */; };
 		96B28ABE273293720091DAAF /* endgame.h in Headers */ = {isa = PBXBuildFile; fileRef = 96B28A83273293720091DAAF /* endgame.h */; };
 		96B28ABF273293720091DAAF /* thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96B28A84273293720091DAAF /* thread.cpp */; };
 		96B28AC0273293720091DAAF /* timeman.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96B28A85273293720091DAAF /* timeman.cpp */; };
@@ -85,13 +85,13 @@
 		6D3974C4C935389670597BC5 /* Pods-CapacitorStockfishVariantsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapacitorStockfishVariantsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CapacitorStockfishVariantsTests/Pods-CapacitorStockfishVariantsTests.release.xcconfig"; sourceTree = "<group>"; };
 		91781294A431A2A7CC6EB714 /* Pods-Plugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plugin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plugin/Pods-Plugin.release.xcconfig"; sourceTree = "<group>"; };
 		962E320C25924CED004FDF57 /* threadbuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = threadbuf.h; path = ../../lib/threadbuf.h; sourceTree = "<group>"; };
-		962E34CA259359D4004FDF57 /* StockfishSendOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockfishSendOutput.h; sourceTree = "<group>"; };
+		962E34CA259359D4004FDF57 /* StockfishSendOutputMv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockfishSendOutputMv.h; sourceTree = "<group>"; };
 		962E35B12594EE7E004FDF57 /* Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plugin.m; sourceTree = "<group>"; };
 		962E35B52594EEA9004FDF57 /* Plugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
-		962E35BB2594EECE004FDF57 /* StockfishBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockfishBridge.h; sourceTree = "<group>"; };
-		962E35C12594EF0A004FDF57 /* StockfishBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StockfishBridge.mm; sourceTree = "<group>"; };
-		96A9B8032591EE5C00389888 /* Stockfish.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stockfish.cpp; sourceTree = "<group>"; };
-		96A9B8042591EE5C00389888 /* Stockfish.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stockfish.hpp; sourceTree = "<group>"; };
+		962E35BB2594EECE004FDF57 /* StockfishBridgeMv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockfishBridgeMv.h; sourceTree = "<group>"; };
+		962E35C12594EF0A004FDF57 /* StockfishBridgeMv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StockfishBridgeMv.mm; sourceTree = "<group>"; };
+		96A9B8032591EE5C00389888 /* StockfishMv.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StockfishMv.cpp; sourceTree = "<group>"; };
+		96A9B8042591EE5C00389888 /* StockfishMv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StockfishMv.hpp; sourceTree = "<group>"; };
 		96B28A6C273293720091DAAF /* Copying.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Copying.txt; sourceTree = "<group>"; };
 		96B28A6D273293720091DAAF /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
 		96B28A6F273293720091DAAF /* msys.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = msys.sh; sourceTree = "<group>"; };
@@ -209,11 +209,11 @@
 				50ADFF8B201F53D600D50D53 /* Plugin.h */,
 				962E35B12594EE7E004FDF57 /* Plugin.m */,
 				50ADFF8C201F53D600D50D53 /* Info.plist */,
-				96A9B8032591EE5C00389888 /* Stockfish.cpp */,
-				96A9B8042591EE5C00389888 /* Stockfish.hpp */,
-				962E34CA259359D4004FDF57 /* StockfishSendOutput.h */,
-				962E35BB2594EECE004FDF57 /* StockfishBridge.h */,
-				962E35C12594EF0A004FDF57 /* StockfishBridge.mm */,
+				96A9B8032591EE5C00389888 /* StockfishMv.cpp */,
+				96A9B8042591EE5C00389888 /* StockfishMv.hpp */,
+				962E34CA259359D4004FDF57 /* StockfishSendOutputMv.h */,
+				962E35BB2594EECE004FDF57 /* StockfishBridgeMv.h */,
+				962E35C12594EF0A004FDF57 /* StockfishBridgeMv.mm */,
 				9C33913C270CAC2400DD322F /* module.mapfile */,
 			);
 			path = Plugin;
@@ -375,7 +375,7 @@
 			files = (
 				96B28ADD273293720091DAAF /* search.h in Headers */,
 				96B28AC4273293720091DAAF /* tune.h in Headers */,
-				962E34CB259359D4004FDF57 /* StockfishSendOutput.h in Headers */,
+				962E34CB259359D4004FDF57 /* StockfishSendOutputMv.h in Headers */,
 				96B28AD4273293720091DAAF /* movegen.h in Headers */,
 				50ADFF99201F53D600D50D53 /* Plugin.h in Headers */,
 				96B28AC2273293720091DAAF /* types.h in Headers */,
@@ -391,9 +391,9 @@
 				96B28AD6273293720091DAAF /* thread_win32_osx.h in Headers */,
 				962E320D25924CED004FDF57 /* threadbuf.h in Headers */,
 				96B28AD7273293720091DAAF /* movepick.h in Headers */,
-				96A9B8062591EE5C00389888 /* Stockfish.hpp in Headers */,
+				96A9B8062591EE5C00389888 /* StockfishMv.hpp in Headers */,
 				96B28AE2273293720091DAAF /* timeman.h in Headers */,
-				962E35BC2594EECE004FDF57 /* StockfishBridge.h in Headers */,
+				962E35BC2594EECE004FDF57 /* StockfishBridgeMv.h in Headers */,
 				96B28ACC273293720091DAAF /* bitboard.h in Headers */,
 				96B28AD8273293720091DAAF /* evaluate.h in Headers */,
 			);
@@ -569,8 +569,8 @@
 				96B28AC7273293720091DAAF /* Makefile in Sources */,
 				96B28AC1273293720091DAAF /* ucioption.cpp in Sources */,
 				96B28ACD273293720091DAAF /* tune.cpp in Sources */,
-				962E35C22594EF0A004FDF57 /* StockfishBridge.mm in Sources */,
-				96A9B8052591EE5C00389888 /* Stockfish.cpp in Sources */,
+				962E35C22594EF0A004FDF57 /* StockfishBridgeMv.mm in Sources */,
+				96A9B8052591EE5C00389888 /* StockfishMv.cpp in Sources */,
 				96B28AD1273293720091DAAF /* bitbase.cpp in Sources */,
 				96B28ADB273293720091DAAF /* material.cpp in Sources */,
 				962E35B62594EEA9004FDF57 /* Plugin.swift in Sources */,

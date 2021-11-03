@@ -1,10 +1,11 @@
 import Foundation
 import Capacitor
+import MachO
 
 @objc(StockfishVariants)
 public class StockfishVariants: CAPPlugin {
     
-    private var stockfish: StockfishBridge?
+    private var stockfish: StockfishBridgeMv?
     private var isInit = false
     
     private let template = "{\"output\": \"%@\"}"
@@ -44,8 +45,10 @@ public class StockfishVariants: CAPPlugin {
     }
     
     @objc func getCPUArch(_ call: CAPPluginCall) {
+        let info = NXGetLocalArchInfo()
+        let arch = NSString(utf8String: (info?.pointee.name)!)
         call.resolve([
-            "value": StockfishBridge.getCPUType() ?? "unknown"
+            "value": arch ?? "unknown"
         ])
     }
 
@@ -59,7 +62,7 @@ public class StockfishVariants: CAPPlugin {
 
     @objc func start(_ call: CAPPluginCall) {
         if (!isInit) {
-            stockfish = StockfishBridge(plugin: self)
+            stockfish = StockfishBridgeMv(plugin: self)
             stockfish?.start()
             isInit = true
         }

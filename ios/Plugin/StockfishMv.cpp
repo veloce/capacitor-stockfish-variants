@@ -1,15 +1,15 @@
 #include <iostream>
-#include "bitboard.h"
-#include "endgame.h"
-#include "position.h"
-#include "search.h"
-#include "thread.h"
-#include "tt.h"
-#include "uci.h"
-#include "tbprobe.h"
-#include "threadbuf.h"
-#include "Stockfish.hpp"
-#include "StockfishSendOutput.h"
+#include "../../stockfish/src/bitboard.h"
+#include "../../stockfish/src/endgame.h"
+#include "../../stockfish/src/position.h"
+#include "../../stockfish/src/search.h"
+#include "../../stockfish/src/thread.h"
+#include "../../stockfish/src/tt.h"
+#include "../../stockfish/src/uci.h"
+#include "../../stockfish/src/syzygy/tbprobe.h"
+#include "../../lib/threadbuf.h"
+#include "StockfishMv.hpp"
+#include "StockfishSendOutputMv.h"
 
 namespace PSQT {
   void init();
@@ -34,7 +34,7 @@ namespace CapacitorStockfishVariants
       std::getline(lichin, line);
       if (line != CMD_EXIT) {
         const char* coutput = line.c_str();
-        StockfishSendOutput(bridge, coutput);
+        StockfishSendOutputMv(bridge, coutput);
       } else {
         o = CMD_EXIT;
       }
