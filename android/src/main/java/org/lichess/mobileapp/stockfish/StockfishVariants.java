@@ -30,7 +30,7 @@ public final class StockfishVariants extends Plugin {
   private static boolean supportedArch = true;
   static {
     try {
-      System.loadLibrary("stockfish");
+      System.loadLibrary("stockfish-variants");
     } catch (java.lang.UnsatisfiedLinkError e) {
       supportedArch = false;
     }
